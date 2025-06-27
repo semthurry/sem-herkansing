@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tyler Tamagotchi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container"> </div>
+<div>
+    <div id="status-bars">
+      <div class="bar-container">
+        <div class="bar-label">Optreden</div>
+        <div class="bar" id="bar-1"></div>
+      </div>
+      <div class="bar-container">
+        <div class="bar-label">Kleding ontwerpen</div>
+        <div class="bar" id="bar-2"></div>
+      </div>
+      <div class="bar-container">
+        <div class="bar-label">Grammys winnen</div>
+        <div class="bar" id="bar-3"></div>
+      </div>
+        <audio id="optreden-sound" src="audio/potatosalad.mp3"></audio>
+        <audio id="mode-sound" src="audio/mode.mp3"></audio>
+        <audio id="grammy-sound" src="audio/tylernotfinished.mp3"></audio>
+
+    </div>
+
+    <div id="tyler">
+      <img id="tyler-image" src="img/tylernormal.png" alt="Tyler the Creator">
+      <div id="speech-bubble" hidden>Zorg voor mij!</div>
+    </div>
+
+    <div id="buttons">
+      <button onclick="boostBar(1)">Microfoon</button>
+      <button onclick="boostBar(2)">Mode</button>
+      <button onclick="boostBar(3)">Grammy</button>
+    </div>
+
+    <div id="game-over">
+      <h2>GAME OVER!</h2>
+      <img src="img/gameover.jpg" alt="Sad Tyler">
+      <p>Tyler is er helemaal klaar mee...<br><strong>Het spel start automatisch opnieuw in 5 seconden.</strong></p>
+    </div>
+
+    <audio id="gameover-sound" src="audio/gameoversong.mp3"></audio>
+    
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
